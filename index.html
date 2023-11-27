@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbutus Creations</title>
+    <script src="script.js" defer></script>
+    <link href = "style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    
+    <header>
+    <div class="header-logo">
+        <img id="deer-logo" src="images/Arbutus_Creations.jpg" alt="geometric-deer">
+        <div id="header-icon-container">
+            <h3 class="header-icon"><i class="fa-solid fa-user"></i><span id="log-in">Log In</span></h3>
+            <div id="cart-btn" onclick="showDiv()"><h3 class="header-icon"><i class="fa-solid fa-cart-shopping"></i><span id="cart-total">0</span></h3></div>
+        </div>
+    </div>
+    <div class="nav-container">
+        <ul>
+            <li class="btn nav-link">Shop</li>
+            <li class="btn nav-link">Rewards</li>
+            <li class="btn nav-link">Sale</li>
+            <li class="btn nav-link">Gift Cards</li>
+            <li class="btn nav-link">About Us </li>
+            <li class="btn nav-link">Contact Us </li>
+        </ul>
+    </div>
+    </header>
+
+<!-- Cart Tab ------------------------------------------------------------------------ -->
+
+<div id="cart-tab" class="cartTab">
+    <h1>Shopping Cart</h1>
+    <div class="listCart">
+        <div class = "item">
+
+        </div>
+
+        <div class="cart-btn">
+            <button class="closeTab" onclick="closeDiv()">Keep Shopping</button>
+            <button class="checkOut">Check Out</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Main portion of the site ------------------------------------------------------------- -->
+<main>
+    <h1 id="banner-text-overlay">Simple. Natural. Clean. </h1>
+    <img id="main-banner" src="images/coldprocess-banner.jpg" alt="hands-making-soap">
+
+       
+    
+    
+    <!-- Modal portion of the HTML ------------------------------------------------------------------ -->
+
+    <!-- Modal button -->
+    <div id="myBtn">Click here for 20% off!</div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1 id="subscribe-form">Subscribe for 20% off your first order!</h1>
+            <!-- <p>Some text in the Modal..</p> -->
+            <form id="form-div">
+                <label id = "subscribe-email">Enter your email:</label><input type="text">
+                <input id = "submit-btn" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+     <!-- The photo slider portion of the site ----------------------------------------------------- -->
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="images/553036876.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="images/The Best Ingredients For Soap Making - Soaps - LR.jpg" style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons (UTF-8 ARROWS); -->
+    <div class="prev" onclick="plusSlides(-1)">&lt;</div>  
+    <div class="next" onclick="plusSlides(1)">&gt;</div>
+  </div>
+  <br>
+
+    <!-- Products portion of the site ------------------------------------------------------- -->
+        <h1>New Products</h1>
+        <div class = "grid-container">
+            <div class = "grid-item">
+                <img class="grid-image" src="images/tumeric_milk_bar.jpg">
+                <div class="item-description">Cleansing Tumeric & Oat Milk Bar</div>
+                <div class="item-price">$10.00</div>
+                <div class="cart-quantity">
+                    <button class="item-add">Add to cart</button>
+                    <button class="item-remove">Remove from cart</button>
+                </div>
+            </div>
+            <div class = "grid-item">
+                <img class="grid-image" src="images/oatmeal_soap-2.jpg">
+                <div class="item-description">Gentle Oats & Shea Bar</div>
+                <div class="item-price">$10.00</div>
+                <div class="cart-quantity">
+                    <button class="item-add">Add to cart</button>
+                    <button class="item-remove">Remove from cart</button>
+                </div>
+            </div>
+            <div class = "grid-item">
+                <img class="grid-image" src="images/Castile-Cold-Process-Soap.jpg">
+                <div class="item-description">Classic Castile Bar</div>
+                <div class="item-price">$10.00</div>
+                <div class="cart-quantity">
+                    <button class="item-add">Add to cart</button>
+                    <button class="item-remove">Remove from cart</button>
+                </div>
+            </div>
+            <div class = "grid-item">
+                <img class="grid-image" src="images/coconut_oil_soap.jpg">
+                <div class="item-description">Coconut Bar</div>
+                <div class="item-price">$10.00</div>
+                <div class="cart-quantity">
+                    <button class="item-add">Add to cart</button>
+                    <button class="item-remove">Remove from cart</button>
+                </div>
+            </div>
+
+            <footer>
+            <div>
+                <h1 class="footer-icon"><i class="fa-brands fa-instagram"></i></h3>
+                <h1 class="footer-icon"><i class="fa-brands fa-facebook"></i></h1>
+                <h1 class="footer-icon"><i class="fa-brands fa-tiktok"></i></h1>
+            </div>
+            </footer>
+        </div>
+        
+    </main>
+    
+   
+  
+
+</body>
+</html>
