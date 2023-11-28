@@ -1,9 +1,9 @@
-///////////////////////////////////////////////////// Get the modal -----------------------------------------------------
-let modal = document.getElementById("myModal");
+/////////////////////////////////////////////////// Get the modal /////////////////////////////////////////////////
+const modal = document.getElementById("myModal");
 
-let btn = document.getElementById("myBtn");
+const btn = document.getElementById("modalBtn");
 
-let span = document.getElementsByClassName("close")[0];
+const closeModal = document.getElementsByClassName("close")[0];
 
 
 // When the user clicks on the button, open the modal
@@ -12,19 +12,12 @@ btn.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+closeModal.onclick = function() {
   modal.style.display = "none";
 }
 
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-//////////////////////////////////////////////////// Shopping Cart portion of the site -------------------------------------------------------------
+//////////////////////////////////////////////////// Shopping Cart portion of the site ////////////////////////////////////////////-
 // this is element that makes the shopping cart appear ---------------------------------------------
 let shoppingList = document.getElementById("cart-tab");
 
@@ -40,7 +33,7 @@ function closeDiv() {
 
 
 
-////////////////////////////////////////////////// The adding and removing of items from the cart --------------------
+////////////////////////////////////////////////// The adding and removing of items from the cart ////////////////////////////////////
 
 // selecting all the "add to cart" buttons on main page
 const carts = document.querySelectorAll('.item-add');
@@ -92,8 +85,6 @@ for (let i = 0; i < carts.length; i++) {
 // this function adds and removes the cart number to the number counter at the top of the page with shopping list icon /////////////
 function cartNumbers() {
   
-
-
   // 2.  when the key is referenced in .getItem, it retrieves the value associated with it. However, it retrieves it as a STRING and not a NUMBER (ex: displays as 1111111)
   let productNumbers = localStorage.getItem('cartNumbers');
   // 3. therefore, need to parseInt the string to convert to number ---- however now it won't go past 1 when clicked
@@ -146,10 +137,14 @@ function currentSlide(n) {
 
 function showSlides(n) {
 
-  let slides = document.getElementsByClassName("mySlides");
+  let slides = document.getElementsByClassName("photoSlides");
   
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
